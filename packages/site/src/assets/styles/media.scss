@@ -1,0 +1,107 @@
+@media (max-width: 320px){
+    .section-2{
+        padding: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    .section-1{
+        width: 95% !important;
+        margin: auto !important;
+        .banner{
+            display: none !important;
+            img {
+                display: none !important;
+            }
+        }
+        .info {
+            button.hato-button-solid{
+                margin-left: 5px !important;
+            }
+        }      
+    }
+}
+@media screen and (max-width: 585px) {
+    .layout{
+        max-width: 540px;
+        margin: auto;
+    }
+    .nav {
+        .menu {
+            ul {
+                display: none;
+            }
+            .hidden-menu {
+                display: unset;
+            }
+        }
+    }
+    .section-1{
+        margin: 0 !important;
+        .banner{
+            img {
+                display: none !important;
+            }
+        }
+        .info{
+            margin-left: 10px;
+            flex: auto !important;
+            button.hato-button-only-border{
+                display: block;
+                margin-left: 0 !important;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media screen and (min-width: 768px) {
+    .layout{
+        max-width: 720px;
+        margin: auto;
+    }
+    .section-1{
+        .banner{
+            img {
+                display: none;
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .section-1{
+        .info {
+            button.hato-button{
+                width: 100%;
+            }
+            button.hato-button-only-border{
+                margin-left: 0 !important;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@media screen and (min-width: 992px) {
+    .layout{
+        max-width: 960px;
+        margin: auto;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media screen and (min-width: 1200px) {
+    .layout{
+        max-width: 1140px;
+        margin: auto;
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media screen and (min-width: 1400px) {
+    .layout{
+        max-width: 1200px;
+        margin: auto;
+    }
+}

@@ -1,0 +1,60 @@
+:root{
+    --text: #516787;
+    --text-200: #647db1;
+    --text-300: #999999;
+    --primary: #F7E175;
+    --primary-200: #d3c064;
+    --white-100: #FFFFFF;
+    --white-200: #F3F4F6;
+    --white-300: #cac8c8;
+    --space-1: 16px;
+    --space-2: 32px;
+    --btn-text: #516787;
+}
+
+body.accessibility{
+    --text: #252F3D;
+    --text-200: #262e3f;
+    --primary: #3d6bd5;
+    --primary-200: #212f91;
+    --white-100: #FFFFFF;
+    --white-200: #F3F4F6;
+    --white-300: #141414;
+    --space-1: 16px;
+    --space-2: 32px;
+    --btn-text: #121212;
+}
+
+body {
+    transition: background .5s ease-in-out, color .5s ease-in-out;
+}
+
+body.accessibility *{
+    text-shadow: unset !important;
+}
+
+body.accessibility .hato-button {
+    color: white;
+    box-shadow: unset;
+}
+body.accessibility .hato-button-only-border{
+    color: black;
+}
+
+body.accessibility .hato-button-only-border:hover{
+    color: white;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease,
+              transform .5s ease;
+}
+
+.fade-enter-from {
+  opacity: 0;
+  transform: translateX(20px);
+}
+.fade-leave-to{
+    opacity: 0;
+  transform: translateX(15px);
+}
