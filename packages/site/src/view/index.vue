@@ -2,7 +2,7 @@
   <div class="wrapper" ref="wrapper">
     <div id="start" class="section-1">
       <div class="info" ref="section1_obItem">
-        <h1 v-animate="'animate__animated animate__fadeInUp animate__fast'">鸽子窝</h1>
+        <h1 class="banner-title" v-animate="'animate__animated animate__fadeInUp animate__fast'">鸽子窝</h1>
         <span v-animate="'animate__animated animate__fadeInUp animate__fast'">大家以后都是姐妹啦！</span>
         <hatoButton 
           @click="toBiliBiliLive"
@@ -46,6 +46,9 @@
 </template>
 
 <style lang="scss">
+.banner-title{
+	font-size: 56px;
+}
 .section-1{
   display: flex;
   width: 100%;
@@ -64,7 +67,6 @@
   .info{
     flex: 1 0;
     h1{
-      font-size: 72px;
       color: $primary;
       margin-bottom: 16px;
       margin-top: 0;
@@ -72,7 +74,6 @@
     }
     span {
       display: block;
-      font-size: 36px;
       color: $text;
       margin-bottom: 16px;
     }
@@ -109,18 +110,24 @@
 
 <script lang="ts" setup>
 import dataset from './dataset.json';
-import hatoButton from '@/components/hato-button/component-hatoButton.vue';
-import HatoIntroduce from '@/components/hato-introduce/component-hatoIntroduce.vue';
-import HatoTimeline from '@/components/hato-timeline/component-hatoTimeline.vue';
+import hatoButton from '@/components/common/button/button.vue';
+import HatoIntroduce from '@/components/introduce/introduce.vue';
+import HatoTimeline from '@/components/timeline/timeline.vue';
 import { onMounted, ref } from 'vue';
 import { useEventHub } from '@/hooks/useEventHub';
+import { mark2html } from '@/utils/markdown/mark2html';
 const toBiliBiliLive = ()=>{
 	window.open('https://live.bilibili.com/7768761');
 };
 const toBiliBiliSpace = () => {
 	window.open('https://space.bilibili.com/16217876');
 };
-
+// const markdownRender = mark2html(`
+// :::card start
+// # h1
+// :::card end
+// `);
+// console.log(markdownRender);
 const section1_obItem = ref(null);
 const wrapper = ref(null);
 const timeline = ref(null);

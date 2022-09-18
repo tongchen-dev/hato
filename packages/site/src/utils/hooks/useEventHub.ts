@@ -1,4 +1,4 @@
-import hub from '../utils/eventHub';
+import hub from '../eventHub';
 let instance:hub;
 export function useEventHub(){
 	if (!instance){

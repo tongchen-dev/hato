@@ -1,6 +1,6 @@
 import {createRouter, createWebHistory, RouteLocationNormalized} from 'vue-router';
 import routes from './routes';
-import { useEventHub } from '@/hooks/useEventHub';
+import { useEventHub } from '@/utils/hooks/useEventHub';
 
 const hub = useEventHub();
 

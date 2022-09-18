@@ -37,7 +37,7 @@
 </template>
 
 <script lang="ts" setup>
-import Card from '@/components/Card/component-card.vue';
+import Card from '@/components/common/Card/card.vue';
 </script>
 
 <style>

@@ -13,6 +13,7 @@ export default defineConfig({
 	],
 	resolve:{
 		alias:{
+			'@/hooks': resolve(__dirname, 'src', 'utils', 'hooks'),
 			'@': resolve(__dirname,'src'),
 			'@/assets': resolve(__dirname, 'assets'),
 			'/images': 'src/assets/img/'

@@ -27,16 +27,16 @@
                 <span>友情链接</span>
             </div> -->
         </Layout>
-        <div class="ICP">
+        <!-- <div class="ICP">
             <span style="text-align: center;">
                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxx号
             </span>
-        </div>
+        </div> -->
     </div>
 </template>
 
 <script lang="ts" setup>
-import Layout from '@/components/layout/component-Layout.vue';
+import Layout from '@/components/common/layout/layout.vue';
 </script>
 
 <style lang="scss">

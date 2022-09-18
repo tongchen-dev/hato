@@ -24,16 +24,7 @@ const routes: RouteRecordRaw[] = [
 	{
 		name: 'about',
 		path: '/about',
-		component: ()=>import('@/view/about/AboutIndex.vue'),
-		meta:{
-			inNav: false,
-			active: -1
-		}
-	},
-	{
-		name: 'playground',
-		path: '/playground',
-		component: ()=>import('@/view/playground/PlayGroundIndex.vue'),
+		component: ()=>import('@/view/about.vue'),
 		meta:{
 			inNav: false,
 			active: -1

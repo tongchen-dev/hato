@@ -61,7 +61,7 @@
 </template>
 
 <script lang="ts" setup>
-import carousel from '@/components/Carousel/component-carousel.vue';
+import carousel from '@/components/Carousel/carousel.vue';
 </script>
 
 <style lang="scss" scoped>
@@ -69,11 +69,9 @@ import carousel from '@/components/Carousel/component-carousel.vue';
     background: black;
     color: black;
     transition: all .5s ease;
-    font-size:16px;
 }
 .hidden:hover{
     color: white;
-    font-size:16px;
 }
 #about-hato{
     text-align: center;

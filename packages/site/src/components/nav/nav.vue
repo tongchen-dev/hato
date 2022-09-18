@@ -54,7 +54,7 @@
 </template>
 
 <script lang="ts" setup>
-import layout from '@/components/layout/component-Layout.vue';
+import layout from '@/components/common/layout/layout.vue';
 import { onMounted, ref} from 'vue';
 import {useEventHub} from '@/hooks/useEventHub';
 import {useDestoryMask, useMask} from '@/hooks/useMask';
