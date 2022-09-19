@@ -1,7 +1,7 @@
-import { Ref } from 'vue';
+import { DirectiveBinding, VNode } from 'vue';
 
 export default {
-	mounted: function (el: HTMLElement,binding: Ref){
+	mounted: function (el: any, binding: DirectiveBinding<any>, vnode: VNode<any, any, { [key: string]: any; }>, prevVNode: null){
 		el.style.opacity='0';
 		const ob = new IntersectionObserver((entries: IntersectionObserverEntry[])=>{
 			const entrie = entries[0];
