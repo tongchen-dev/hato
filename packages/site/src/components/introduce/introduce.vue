@@ -1,15 +1,15 @@
 <template>
-    <h1 id="about-hato" v-animate="
+    <h2 id="about-hato" v-animate="
                         'animate__animated animate__fadeInUp'
-                        ">关于小鸠</h1>
+                        ">关于小鸠</h2>
     <blockquote v-animate="
                         'animate__animated animate__fadeInUp'
                         ">愿日子干净，所遇皆是你们。</blockquote>
     <div class="introduce-wrapper">
         <div class="introduce">
-            <h2 style="margin-bottom: 0.5rem" v-animate="
+            <h3 style="margin-bottom: 0.5rem" v-animate="
                         'animate__animated animate__fadeInUp animate__fast'
-                        ">白夜小鸠Hato</h2>
+                        ">白夜小鸠Hato</h3>
             <blockquote v-animate="
                         'animate__animated animate__fadeInUp'
                         ">是一只给人们带来福音的小鸽子啦</blockquote>
@@ -75,13 +75,13 @@ import carousel from '@/components/Carousel/carousel.vue';
 }
 #about-hato{
     text-align: center;
-    color: $text;
+    color: $text-500;
     margin-top: 0;
     padding-top: 1em;
     margin-bottom: .5rem;
 }
 #about-hato + blockquote{
-    color: $white-300;
+    color: $text-300;
     text-align: center;
     margin-bottom: 32px;
 }
@@ -108,7 +108,7 @@ import carousel from '@/components/Carousel/carousel.vue';
         blockquote{
             margin: 0;
             text-align: left;
-            color: $white-300;
+            color: $text-200;
             margin-bottom: 8px;
         }
         h1,h2,h3,h4,h5,h6 {
@@ -126,7 +126,7 @@ import carousel from '@/components/Carousel/carousel.vue';
         }
         .introduce-content{
             line-height: 1.7;
-            font-size: 18px;
+            font-size: 16px;
         }
         ul {
             li {
@@ -138,7 +138,7 @@ import carousel from '@/components/Carousel/carousel.vue';
         height: auto;
         border-radius: $rounded-md;
         padding: 16px;
-        color: $text;
+        color: $text-500;
         background: $white-100;
     }
     .banner{

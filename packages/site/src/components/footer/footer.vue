@@ -58,11 +58,11 @@ import Layout from '@/components/common/layout/layout.vue';
             gap: 8px;
             margin: 1em; 
             span{
-                color: $text-2;
+                color: $text-600;
             }
             span:first-child{
                 font-weight: bold;
-                color: $text;
+                color: $text-500;
             }
             span~a{
                 font-size: 14px;
