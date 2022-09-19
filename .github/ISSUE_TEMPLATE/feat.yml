@@ -1,0 +1,18 @@
+name: 新功能提案
+description: 向仓库添加一个新功能提案
+title: "[Feat]: "
+labels: ["feat"]
+assignees:
+  - GaoNeng-wWw
+body:
+  - type: markdown
+    attributes:
+      value: |
+          感谢您愿意花费时间来发起一个新功能提案，请认真填写以下表单
+  - type: textarea
+    id: introduce
+    attributes:
+      label: 介绍
+      description: 详细介绍一下该功能
+    validations:
+      required: true
