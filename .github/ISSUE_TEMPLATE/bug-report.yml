@@ -1,0 +1,40 @@
+name: Bug 汇报
+description: 向我们汇报一个bug
+title: "[Bug]: "
+labels: ["bug", "need help"]
+assignees:
+  - GaoNeng-wWw
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你愿意花费时间来会报一个bug
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 出现了什么问题
+      description: 详细的说明一下发生了什么
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: 您在访问什么地方的时候出现了问题
+      description: 网页? 还是后端？
+      options:
+        - 应援站
+        - 后端API
+    validations:
+      required: true
+  - type: textarea
+    id: actually
+    attributes:
+      label: 实际上应该是什么样的?
+    validations:
+      required: true
+  - type: textarea
+    id: other
+    attributes:
+      label: 其他描述(可选)
+    validations:
+      required: true
