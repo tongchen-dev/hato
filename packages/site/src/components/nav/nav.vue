@@ -155,9 +155,9 @@ window.onresize = () => {
                 position: relative;
                 float: left;
                 &:not(:first-child){
-                    margin-left: $space-1;
+                    margin-left: $space-100;
                 }
-                color: $text;
+                color: $text-500;
                 font-size: 20px;
                 &::after{
                     transition: transform 800ms ease;
@@ -167,24 +167,23 @@ window.onresize = () => {
                     bottom: -3px;
                     left: 0;
                     transform: scaleY(0);
-                    background: $primary;
+                    background: $primary-500;
                     content: "";
                 }
                 &:hover::after{
                     transform: scaleY(1);
-                    background: $primary;
+                    background: $primary-500;
                 }
             }
             .menu-item-active::after{
                 transform: scaleY(1);
-                background: $primary;
+                background: $primary-500;
             }
         }
     }
     .menu-slideDown {
         width: 100%;
         min-height: 72px;
-        // background: red;
         border-top: 1pt solid $white-300;
         background: $white-200;
         position: absolute;
@@ -196,7 +195,7 @@ window.onresize = () => {
             }
             .menu-item-active{
                 a{
-                    color: $text-2;
+                    color: $text-600;
                     font-weight: bold;
                 }
             }

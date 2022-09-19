@@ -3,7 +3,7 @@
     <div id="start" class="section-1">
       <div class="info" ref="section1_obItem">
         <h1 class="banner-title" v-animate="'animate__animated animate__fadeInUp animate__fast'">鸽子窝</h1>
-        <span v-animate="'animate__animated animate__fadeInUp animate__fast'">大家以后都是姐妹啦！</span>
+        <span v-animate="'animate__animated animate__fadeInUp animate__fast'">是一只给人们带来福音的小鸽子啦</span>
         <hatoButton 
           @click="toBiliBiliLive"
           v-animate="
@@ -47,7 +47,7 @@
 
 <style lang="scss">
 .banner-title{
-	font-size: 56px;
+	font-size: 64px;
 }
 .section-1{
   display: flex;
@@ -67,14 +67,14 @@
   .info{
     flex: 1 0;
     h1{
-      color: $primary;
+      color: $primary-500;
       margin-bottom: 16px;
       margin-top: 0;
-      text-shadow: 0 5px $primary-200;
+      text-shadow: 0 5px $primary-600;
     }
     span {
       display: block;
-      color: $text;
+      color: $text-500;
       margin-bottom: 16px;
     }
   }
@@ -88,7 +88,7 @@
   width: 100%;
   h1{
     margin: 3em 0 .5em 0;
-    color: $text;
+    color: $text-500;
     text-align: center;
   }
   .timeline{
@@ -101,7 +101,7 @@
       padding: 1em 1.5em;
       background: $white-100;
       .arco-timeline-item-content{
-        color: $text;
+        color: $text-500;
       }
     }
   }
@@ -115,7 +115,6 @@ import HatoIntroduce from '@/components/introduce/introduce.vue';
 import HatoTimeline from '@/components/timeline/timeline.vue';
 import { onMounted, ref } from 'vue';
 import { useEventHub } from '@/hooks/useEventHub';
-import { mark2html } from '@/utils/markdown/mark2html';
 const toBiliBiliLive = ()=>{
 	window.open('https://live.bilibili.com/7768761');
 };
