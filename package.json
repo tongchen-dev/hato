@@ -8,6 +8,7 @@
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "commitizen": "^4.2.5",
+    "commitlint": "^17.1.2",
     "conventional-changelog-cli": "^2.2.2",
     "cz-conventional-changelog-zh": "^0.0.2",
     "cz-customizable": "^7.0.0",
@@ -20,23 +21,13 @@
     "start:back": "cd ./packages/back && pnpm start:dev",
     "lint-staged": "lint-staged",
     "commitlint": "commitlint --config commitlint.config.js -e -V",
-    "commit": "git add . && git cz"
+    "commit": "git add . && git cz",
+    "prepare": "husky install",
+    "commitmsg": "commitlint -e $GIT_PARAMS"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog-zh"
-    }
-  },
-  "lint-staged": {
-    "*.{js,vue,jsx,tsx}": [
-      "eslint --cache --fix",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
 }
