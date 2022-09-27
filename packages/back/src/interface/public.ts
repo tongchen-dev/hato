@@ -43,6 +43,10 @@ export interface ContributorInfo {
    * 贡献者名称
    */
   name: string;
+  /**
+   * 密码
+   */
+  password: string;
 }
 
 export interface Pic {

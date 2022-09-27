@@ -23,7 +23,8 @@
     "commitlint": "commitlint --config commitlint.config.js -e -V",
     "commit": "git add . && git cz",
     "prepare": "husky install",
-    "commitmsg": "commitlint -e $GIT_PARAMS"
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "e2e:back": "cd ./packages/back && pnpm test:e2e"
   },
   "config": {
     "commitizen": {

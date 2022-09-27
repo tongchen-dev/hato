@@ -1,0 +1,21 @@
+0 silly argv {
+0 silly argv   _: [ 'create' ],
+0 silly argv   lernaVersion: '5.5.1',
+0 silly argv   '$0': 'C:\\Users\\GaoNeng\\AppData\\Local\\pnpm\\global\\5\\node_modules\\lerna\\cli.js',
+0 silly argv   name: 'manager'
+0 silly argv }
+1 notice cli v5.5.1
+2 verbose rootPath I:\Code\hato
+3 error Error: canceled
+3 error     at Interface.<anonymous> (I:\Code\hato\node_modules\.pnpm\read@1.0.7\node_modules\read\lib\read.js:66:13)
+3 error     at Interface.emit (node:events:513:28)
+3 error     at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1124:18)
+3 error     at ReadStream.onkeypress (node:internal/readline/interface:273:20)
+3 error     at ReadStream.emit (node:events:513:28)
+3 error     at emitKeys (node:internal/readline/utils:357:14)
+3 error     at emitKeys.next (<anonymous>)
+3 error     at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+3 error     at ReadStream.emit (node:events:513:28)
+3 error     at addChunk (node:internal/streams/readable:324:12)
+3 error     at readableAddChunk (node:internal/streams/readable:297:9)
+3 error     at Readable.push (node:internal/streams/readable:234:10)

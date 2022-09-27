@@ -12,6 +12,8 @@ import {
 } from './dto/contribution.dto';
 import { randomUUID } from 'crypto';
 import { FeatPayload, FixEventPayload } from '../interface/public';
+import { isEmpty } from 'lodash';
+import { useHash } from 'src/shared/utils/useHash';
 @Injectable()
 export class ContributionService {
   private builder: {
@@ -49,11 +51,40 @@ export class ContributionService {
 
   async contribution(data: contributionDTO) {
     const { title, type, payload, contribution_type, contributor } = data;
+    const { name, email, password } = contributor;
+    let user;
     if (contribution_type === 'pic') {
       if (type === 'fix') {
         throw new BadReqeust();
       }
     }
+    if (contributor) {
+      const contributorInfo = await this.builder.contributor
+        .select()
+        .where('name = :name', { name })
+        .andWhere('email = :email', { email })
+        .execute();
+      const hashPassword = useHash(password);
+      if (isEmpty(contributorInfo)) {
+        await this.builder.contributor
+          .insert()
+          .values({
+            email,
+            name,
+            password: hashPassword,
+            contribution: {},
+          })
+          .execute();
+      } else {
+        user = (contributorInfo as any[]).filter((v) => {
+          return v.Contributor_password === hashPassword;
+        });
+        if (isEmpty(user)) {
+          throw new BadReqeust('密码错误');
+        }
+      }
+    }
+    contributor['password'] = undefined;
     const contributionData: FeatPayload[] = (payload as FeatPayload[]).map(
       (item) => ({
         ...item,
