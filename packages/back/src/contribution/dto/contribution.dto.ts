@@ -25,8 +25,6 @@ export class contribution {
   @IsNotEmpty()
   title: string;
   @IsArray()
-  // payload: deepOmit<Event[] | Pic[], 'contributor'>;
-  // payload: Event[] | Pic[];
   payload: FeatPayload[] | FixEventPayload;
   @IsNotEmpty()
   contribution_type: 'event' | 'pic';

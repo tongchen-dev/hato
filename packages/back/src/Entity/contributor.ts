@@ -11,4 +11,6 @@ export class Contributor {
   email: string;
   @Column('jsonb')
   contribution: IContribution;
+  @Column('text')
+  password: string;
 }
