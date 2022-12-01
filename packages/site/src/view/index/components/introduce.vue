@@ -43,7 +43,7 @@
 </template>
 
 <script lang="ts" setup>
-import carousel from '@/components/Carousel/carousel.vue';
+import carousel from '@/view/index/components/carousel.vue';
 import aboutHato from '@/docs/introduce.md';
 </script>
 
