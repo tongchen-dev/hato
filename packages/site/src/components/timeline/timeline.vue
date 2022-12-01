@@ -12,8 +12,6 @@
 </template>
 
 <script lang="ts" setup>
-import { useApi } from '@/api';
-import { EventLine } from '@/api/lib/evet-line';
 import { Timeline, TimelineItem } from '@arco-design/web-vue';
 import '@arco-design/web-vue/es/timeline/style/css.js';
 import { Ref, ref } from 'vue';
@@ -22,24 +20,14 @@ const props = defineProps<{
 	isShow: boolean
 }>();
 const dataset: Ref<string[][]> = ref([]);
-const api = await useApi<EventLine>('EventLine').then((res) => res);
-api.getAll()
-	.then((response) => {
-		dataset.value = response.data.map((value) => [value.datetime, value.content]);
-		dataset.value = dataset.value.sort((a, b) => {
-			return new Date(a[0]).getTime() - new Date(b[0]).getTime();
-		});
-	})
-	.catch((reason) => {
-		dataset.value = [
-			['2021-12-04', '人类首次捕获白夜小鸠初机号'],
-			['2021-12-15', '人类首次捕获白夜小鸠人类化'],
-			['2021-01-30', '除夕回直播'],
-			['2021-01-31', '跨年回直播'],
-			['2022-01-19', '首次被DD们骗上舰'],
-			['2022-01-23', '第二次被DD们骗上舰'],
-			['2022-02-03', '第三次被DD们骗上舰'],
-			['2022-03-27', '百舰纪念生日回']
-		];
-	});
+dataset.value = [
+	['2021-12-04', '人类首次捕获白夜小鸠初机号'],
+	['2021-12-15', '人类首次捕获白夜小鸠人类化'],
+	['2021-01-30', '除夕回直播'],
+	['2021-01-31', '跨年回直播'],
+	['2022-01-19', '首次被DD们骗上舰'],
+	['2022-01-23', '第二次被DD们骗上舰'],
+	['2022-02-03', '第三次被DD们骗上舰'],
+	['2022-03-27', '百舰纪念生日回']
+];
 </script>
