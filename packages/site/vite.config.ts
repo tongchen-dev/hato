@@ -31,7 +31,7 @@ export default defineConfig({
 			},
 		}),
 		eslintPlugin({
-			include: ['src/**/*.ts', 'src/**/*.vue', 'src/*.ts', 'src/*.vue']
+			include: ['./src/**/*.ts', './src/**/*.vue', './src/*.ts', './src/*.vue']
 		}),
 		compression({}),
 		viteImagemin({
