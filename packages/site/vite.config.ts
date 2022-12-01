@@ -12,7 +12,23 @@ export default defineConfig({
 		vue({
 			include: [/\.vue$/, /\.md$/],
 		}),
-		Markdown(),
+		Markdown({
+			wrapperClasses: 'doc-body',
+			markdownItSetup(MarkdownIt) {
+				MarkdownIt.use(require('markdown-it-container'), 'tips', {
+					validate: function(params) {
+						return /tips/.test(params);
+					},
+					render: function (tokens, idx) {
+						const content = /tips (?<info>.*) :::/.exec(tokens[idx].info);
+						if (content?.groups){
+							return `<blockquote>${content?.groups.info}</blockquote>`;
+						}
+						return '';
+					}
+				});
+			},
+		}),
 		eslintPlugin({
 			include: ['src/**/*.ts', 'src/**/*.vue', 'src/*.ts', 'src/*.vue']
 		}),

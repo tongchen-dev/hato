@@ -21,3 +21,8 @@ declare module '*.vue' {
     $hub: any
   }
 }
+declare module '*.md' {
+	import type { ComponentOptions } from 'vue';
+	const Component: ComponentOptions;
+	export default Component;
+}
