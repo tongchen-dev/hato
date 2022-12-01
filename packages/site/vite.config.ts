@@ -15,6 +15,7 @@ export default defineConfig({
 		Markdown({
 			wrapperClasses: 'doc-body',
 			markdownItSetup(MarkdownIt) {
+				// eslint-disable-next-line @typescript-eslint/no-var-requires
 				MarkdownIt.use(require('markdown-it-container'), 'tips', {
 					validate: function(params) {
 						return /tips/.test(params);
