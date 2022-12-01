@@ -1,4 +1,4 @@
-:root{
+:root {
 	--text-100: hsl(0, 0%, 80%);
 	--text-200: hsl(0, 0%, 75%);
 	--text-300: hsl(0, 0%, 65%);
@@ -8,7 +8,7 @@
 	--text-700: hsl(220, 42%, 27%);
 	--text-800: hsl(223, 51%, 20%);
 	--text-900: hsl(225, 62%, 15%);
-    /* --text: #999999;
+	/* --text: #999999;
     --text-200: #647db1;
     --text-300: #516787; */
 	--primary-100: #FEFBE3;
@@ -57,12 +57,12 @@
 	--red-800: #851633;
 	--red-900: #6E0D2F;
 
-    --white-100: #FFFFFF;
-    --white-200: #F3F4F6;
-    --white-300: #cac8c8;
-    --space-100: 16px;
-    --space-200: 32px;
-    --btn-text: #516787;
+	--white-100: #FFFFFF;
+	--white-200: #F3F4F6;
+	--white-300: #cac8c8;
+	--space-100: 16px;
+	--space-200: 32px;
+	--btn-text: #516787;
 	--font-size-1: 48px;
 	--font-size-2: 36px;
 	--font-size-3: 24px;
@@ -73,8 +73,8 @@
 	--font-size-sm: 14px;
 }
 
-body.accessibility{
-    --text-900: hsl(0, 0%, 80%);
+body.accessibility {
+	--text-900: hsl(0, 0%, 80%);
 	--text-800: hsl(0, 0%, 75%);
 	--text-700: hsl(0, 0%, 65%);
 	--text-600: hsl(215, 9%, 60%);
@@ -93,45 +93,53 @@ body.accessibility{
 	--primary-700: #1E3C99;
 	--primary-800: #13297B;
 	--primary-900: #0B1B66;
-	
-    --white-100: #FFFFFF;
-    --white-200: #F3F4F6;
-    --white-300: #141414;
-    --space-100: 16px;
-    --space-200: 32px;
-    --btn-text: #121212;
+
+	--white-100: #FFFFFF;
+	--white-200: #F3F4F6;
+	--white-300: #141414;
+	--space-100: 16px;
+	--space-200: 32px;
+	--btn-text: #121212;
 }
 
 body {
-    transition: background .5s ease-in-out, color .5s ease-in-out;
+	transition: background .5s ease-in-out, color .5s ease-in-out;
 }
 
-body.accessibility *{
-    text-shadow: unset !important;
+body.accessibility * {
+	text-shadow: unset !important;
 }
 
 body.accessibility .hato-button {
-    color: white;
-    box-shadow: unset;
-}
-body.accessibility .hato-button-only-border{
-    color: black;
+	color: white;
+	box-shadow: unset;
 }
 
-body.accessibility .hato-button-only-border:hover{
-    color: white;
+body.accessibility .hato-button-only-border {
+	color: black;
 }
+
+body.accessibility .hato-button-only-border:hover {
+	color: white;
+}
+
+body.accessibility .hidden {
+	background: transparent;
+}
+
+
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s ease,
-              transform .5s ease;
+	transition: opacity 0.5s ease,
+		transform .5s ease;
 }
 
 .fade-enter-from {
-  opacity: 0;
-  transform: translateX(20px);
+	opacity: 0;
+	transform: translateX(20px);
 }
-.fade-leave-to{
-    opacity: 0;
-  transform: translateX(15px);
+
+.fade-leave-to {
+	opacity: 0;
+	transform: translateX(15px);
 }
