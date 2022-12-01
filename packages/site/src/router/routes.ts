@@ -4,7 +4,7 @@ const routes: RouteRecordRaw[] = [
 	{
 		name: 'index',
 		path: '/',
-		component: ()=>import('@/view/index.vue'),
+		component: ()=>import('@/view/index/index.vue'),
 		meta:{
 			inNav: true,
 			active: 0,
@@ -14,7 +14,7 @@ const routes: RouteRecordRaw[] = [
 	{
 		name: 'about-hato',
 		path: '/#about-hato',
-		component: ()=>import('@/view/index.vue'),
+		component: ()=>import('@/view/index/index.vue'),
 		meta: {
 			inNav: true,
 			active: 1,
