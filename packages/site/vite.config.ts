@@ -4,11 +4,15 @@ import {resolve} from 'path';
 import eslintPlugin from 'vite-plugin-eslint';
 import viteImagemin from 'vite-plugin-imagemin';
 import compression from 'vite-plugin-compression';
+import Markdown from 'vite-plugin-vue-markdown';
 
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
-		vue(),
+		vue({
+			include: [/\.vue$/, /\.md$/],
+		}),
+		Markdown(),
 		eslintPlugin({
 			include: ['src/**/*.ts', 'src/**/*.vue', 'src/*.ts', 'src/*.vue']
 		}),
