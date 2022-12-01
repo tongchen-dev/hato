@@ -1,0 +1,42 @@
+.doc-body{
+	blockquote{
+		margin: 0;
+		text-align: left;
+		color: $text-200 !important;
+		margin-bottom: 8px;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 0;
+	}
+
+	h1+blockquote {
+		margin-top: 8px;
+	}
+
+	h3+span {
+		display: inline-block;
+		width: 80%;
+		margin: auto;
+	}
+	ul {
+		li {
+			margin: 16px 0;
+		}
+	}
+	s{
+		transition: background .5s ease-in-out, color .5s ease-in-out;
+		background: black;
+		color: black;
+	}
+	s:hover{
+		color: white;
+		background: black;
+	}
+	line-height: 1.7;
+	font-size: 16px;
+}

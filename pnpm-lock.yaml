@@ -11,6 +11,7 @@ specifiers:
   husky: ^8.0.1
   lerna: ^5.4.3
   lint-staged: ^13.0.3
+  markdown-it-container: ^3.0.0
 
 devDependencies:
   '@commitlint/cli': 17.1.2
@@ -23,6 +24,7 @@ devDependencies:
   husky: 8.0.1
   lerna: 5.5.1
   lint-staged: 13.0.3
+  markdown-it-container: 3.0.0
 
 packages:
 
@@ -3468,6 +3470,10 @@ packages:
   /map-obj/4.3.0:
     resolution: {integrity: sha512-hdN1wVrZbb29eBGiGjJbeP8JbKjq1urkHJ/LIP/NY48MZ1QVXUsQBV1G1zvYFHn1XE06cwjBsOI2K3Ulnj1YXQ==}
     engines: {node: '>=8'}
+    dev: true
+
+  /markdown-it-container/3.0.0:
+    resolution: {integrity: sha512-y6oKTq4BB9OQuY/KLfk/O3ysFhB3IMYoIWhGJEidXt1NQFocFK2sA2t0NYZAMyMShAGL6x5OPIbrmXPIqaN9rw==}
     dev: true
 
   /meow/8.1.2:

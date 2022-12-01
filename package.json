@@ -14,7 +14,8 @@
     "cz-customizable": "^7.0.0",
     "husky": "^8.0.1",
     "lerna": "^5.4.3",
-    "lint-staged": "^13.0.3"
+    "lint-staged": "^13.0.3",
+    "markdown-it-container": "^3.0.0"
   },
   "scripts": {
     "start:web": "cd ./packages/site && pnpm dev",
