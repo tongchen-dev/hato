@@ -1,0 +1,117 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.2.43",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "\u7403\u4f53"
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "\u6750\u8d28",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.5775803923606873,
+                    0.2622503936290741,
+                    0.1274377405643463,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.7339449524879456
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "\u7403\u4f53.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 521,
+            "max" : [
+                0.7567831873893738,
+                1.3396832942962646,
+                0.7567831873893738
+            ],
+            "min" : [
+                -0.7567830681800842,
+                -0.8295707702636719,
+                -0.756783127784729
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 521,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 521,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 2688,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 6252,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6252,
+            "byteOffset" : 6252
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4168,
+            "byteOffset" : 12504
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5376,
+            "byteOffset" : 16672
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 22048,
+            "uri" : "egg.bin"
+        }
+    ]
+}
