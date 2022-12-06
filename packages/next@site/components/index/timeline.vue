@@ -31,7 +31,11 @@
 			padding: $padding-md;
 			margin-bottom: .5em;
 			padding: 1em 1.5em;
-			background: white;
+			background: $bg-1;
+		}
+
+		:deep(.n-timeline-item-content__title) {
+			color: $text-500 !important;
 		}
 
 		:deep(.n-timeline-item-content__meta) {

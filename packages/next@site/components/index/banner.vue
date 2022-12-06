@@ -57,7 +57,7 @@ blockquote {
 			flex: 0 0 auto;
 
 			img {
-				display: inherit;
+				// display: inherit;
 				width: 400px !important;
 				margin: auto;
 			}
@@ -79,6 +79,14 @@ h1 {
 
 	.banner__wrapper__logo {
 		display: none;
+	}
+}
+
+body[theme=dark] {
+	.banner__wrapper__logo {
+		img {
+			opacity: 0;
+		}
 	}
 }
 </style>

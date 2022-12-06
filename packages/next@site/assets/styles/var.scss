@@ -8,6 +8,7 @@ $text-600: var(--text-600);
 $text-700: var(--text-700);
 $text-800: var(--text-800);
 $text-900: var(--text-900);
+
 $primary-100: var(--primary-100);
 $primary-200: var(--primary-200);
 $primary-300: var(--primary-300);
@@ -17,6 +18,7 @@ $primary-600: var(--primary-600);
 $primary-700: var(--primary-700);
 $primary-800: var(--primary-800);
 $primary-900: var(--primary-900);
+
 $green-100: var(--green-100);
 $green-200: var(--green-200);
 $green-300: var(--green-300);
@@ -26,6 +28,7 @@ $green-600: var(--green-600);
 $green-700: var(--green-700);
 $green-800: var(--green-800);
 $green-900: var(--green-900);
+
 $blue-100: var(--blue-100);
 $blue-200: var(--blue-200);
 $blue-300: var(--blue-300);
@@ -60,6 +63,10 @@ $red-900: var(--red-900);
 $white-100: var(--white-100);
 $white-200: var(--white-200);
 $white-300: var(--white-300);
+$bg-1: var(--bg-1);
+$bg-2: var(--bg-2);
+$bg-3: var(--bg-3);
+
 $space-100: var(--space-100);
 $space-200: var(--space-200);
 // border
@@ -67,7 +74,6 @@ $rounded-xs: 4px;
 $rounded-md: 8px;
 $rounded-lg: 16px;
 $container-width: 100%;
-$btn-color: var(--btn-text);
 // font-size
 $font-size-1: var(--font-size-1);
 $font-size-2: var(--font-size-2);
@@ -81,6 +87,8 @@ $font-size-sm: var(--font-size-sm);
 $padding-sm: var(--padding-sm);
 $padding-md: var(--padding-md);
 $padding-lg: var(--padding-lg);
+
+$anime-fn: cubic-bezier(0.94, -0.02, 0.15, 0.98);
 
 
 $grid-breakpoints: (

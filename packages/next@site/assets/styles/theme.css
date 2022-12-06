@@ -16,7 +16,7 @@
 	--primary-300: #FCF1AC;
 	--primary-400: #FAEB97;
 	--primary-500: #F7E175;
-	--primary-600: #D4BC55;
+	--primary-600: #b39e47;
 	--primary-700: #B1993A;
 	--primary-800: #8F7725;
 	--primary-900: #765F16;
@@ -59,10 +59,95 @@
 
 	--white-100: #FFFFFF;
 	--white-200: #F3F4F6;
-	--white-300: #cac8c8;
+	--white-300: #a6a6a6;
+	--bg-1: var(--white-100);
+	--bg-2: var(--white-200);
+	--bg-3: var(--white-300);
 	--space-100: 16px;
 	--space-200: 32px;
-	--btn-text: #516787;
+	/* --text: #516787; */
+	--font-size-1: 48px;
+	--font-size-2: 36px;
+	--font-size-3: 24px;
+	--font-size-4: 20px;
+	--font-size-5: 18px;
+	--font-size-6: 16px;
+	--font-size-normal: 16px;
+	--font-size-sm: 14px;
+
+	--padding-sm: 4px;
+	--padding-md: 8px;
+	--padding-lg: 16px;
+}
+
+body[theme=dark] {
+	/* --text-100: hsl(225, 62%, 15%);
+	--text-200: hsl(223, 51%, 20%);
+	--text-300: hsl(220, 42%, 27%);
+	--text-400: hsl(218, 33%, 34%); */
+	--text-100: hsl(216, 25%, 42%);
+	--text-200: hsl(215, 9%, 60%);
+	--text-300: hsl(0, 0%, 65%);
+	--text-400: hsl(0, 0%, 75%);
+	--text-500: hsl(0, 0%, 80%);
+	/* --text: #999999;
+    --text-200: #647db1;
+    --text-300: #516787; */
+	--primary-100: #FEFBE3;
+	--primary-200: #FEF7C8;
+	--primary-300: #FCF1AC;
+	--primary-400: #FAEB97;
+	--primary-500: hsl(50, 62%, 62%);
+	--primary-600: hsl(48, 51%, 49%);
+	--primary-700: hsl(48, 51%, 46%);
+	--primary-800: #8F7725;
+	--primary-900: #765F16;
+	--green-100: #DFFEDC;
+	--green-200: #BBFEBC;
+	--green-300: #98FCA4;
+	--green-400: #7EFA98;
+	--green-500: #54f887;
+	--green-600: #3DD57B;
+	--green-700: #2AB26F;
+	--green-800: #1A8F61;
+	--green-900: #107758;
+	--blue-100: #12277A;
+	--blue-200: #1D3A93;
+	--blue-300: #2F55B7;
+	--blue-400: #4473DB;
+	--blue-500: #5E96FF;
+	--blue-600: #86B4FF;
+	--blue-700: #9EC6FF;
+	--blue-800: #BEDBFF;
+	--blue-900: #DEEEFF;
+	--yellow-900: #7A2000;
+	--yellow-800: #932E00;
+	--yellow-700: #B74300;
+	--yellow-600: #DB5C00;
+	--yellow-500: #ff7900;
+	--yellow-400: #FFA43F;
+	--yellow-300: #FFBE66;
+	--yellow-200: #FFD999;
+	--yellow-100: #FFEECC;
+	--red-100: #FDE6DA;
+	--red-200: #FCC9B7;
+	--red-300: #F7A391;
+	--red-400: #F07F74;
+	--red-500: #e64848;
+	--red-600: #C53441;
+	--red-700: #A5243A;
+	--red-800: #851633;
+	--red-900: #6E0D2F;
+
+	--white-100: #FFFFFF;
+	--white-200: #F3F4F6;
+	--white-300: #cac8c8;
+	--bg-3: #111827;
+	--bg-2: #1F2937;
+	--bg-1: #374151;
+	--space-100: 16px;
+	--space-200: 32px;
+	/* --text: #516787; */
 	--font-size-1: 48px;
 	--font-size-2: 36px;
 	--font-size-3: 24px;

@@ -29,7 +29,7 @@
 	padding: $padding-md 0;
 	width: 100%;
 	min-height: 100px;
-	background: white;
+	background: $bg-1;
 
 	h4 {
 		font-size: 16px;

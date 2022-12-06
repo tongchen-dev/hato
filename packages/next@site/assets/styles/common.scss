@@ -17,8 +17,11 @@ body,
 	min-height: 100%;
 	margin: 0;
 	padding: 0;
-	background: $white-200;
+	background: $bg-2;
 	font-family: 'HarmonyOS-Font';
+}
+* {
+	transition: all 200ms ease-in-out;
 }
 h1,h2,h3,h4,h5,h6{
     color: $text-500;
@@ -61,5 +64,10 @@ blockquote{
 
 a{
 	color: $blue-700;
+	text-decoration: none;
+}
+
+a:hover{ 
+	color: $blue-800;
 	text-decoration: none;
 }

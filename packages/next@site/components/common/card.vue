@@ -8,6 +8,6 @@
 .card {
 	border-radius: $rounded-xs;
 	padding: $padding-lg;
-	background: white;
+	background: $bg-1;
 }
 </style>
