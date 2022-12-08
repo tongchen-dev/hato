@@ -31,12 +31,12 @@ jobs:
           pnpm install 
           pnpm run generate
 
-      - name: depoly
-        uses: easingthemes/ssh-deploy@v2.0.7
+      - name: deploy
+        uses: burnett01/rsync-deployments@4.1
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
-          ARGS: '-avz --delete'
-          SOURCE: 'packages/next@site/dist'
-          REMOTE_HOST: ${{ secrets.HOST }}
-          REMOTE_USER: ${{ secrets.USER }}
-          TARGET: ${{ secrets.target }}
+        switches: -avzh
+        path: packages/next@site/.output/public/
+        remote_path: /var/www/www.hatoo.com/
+        remote_host: ${{secrets.HOST}}
+        remote_user: ${{secrets.USER}}
+        remote_key: ${{secrets.ACCESS_TOKEN}}
