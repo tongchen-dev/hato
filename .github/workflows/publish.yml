@@ -33,10 +33,10 @@ jobs:
 
       - name: deploy
         uses: burnett01/rsync-deployments@4.1
-        env:
-        switches: -avzh
-        path: packages/next@site/.output/public/
-        remote_path: /var/www/www.hatoo.com/
-        remote_host: ${{secrets.HOST}}
-        remote_user: ${{secrets.USER}}
-        remote_key: ${{secrets.ACCESS_TOKEN}}
+        with:
+          switches: -avzh
+          path: packages/next@site/.output/public/
+          remote_path: /var/www/www.hatoo.com/
+          remote_host: ${{secrets.HOST}}
+          remote_user: ${{secrets.USER}}
+          remote_key: ${{secrets.ACCESS_TOKEN}}
