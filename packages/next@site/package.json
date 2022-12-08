@@ -16,7 +16,9 @@
     "eslint-plugin-vue": "^9.8.0",
     "naive-ui": "^2.34.2",
     "nuxt": "3.0.0",
-    "sass": "^1.56.1"
+    "sass": "^1.56.1",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-imagemin": "^0.6.1"
   },
   "dependencies": {
     "@nuxtjs/style-resources": "^1.2.1"
